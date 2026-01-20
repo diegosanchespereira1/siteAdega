@@ -6,11 +6,11 @@ interface ProductCardProps {
   volume: string;
   price: string;
   img: string;
-  onAddToCart: () => void;
+  onAddToCart?: () => void;
   isPromo?: boolean;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ name, volume, price, img, onAddToCart, isPromo }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ name, volume, price, img, isPromo }) => {
   return (
     <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all border border-slate-100 dark:border-slate-700 flex flex-col h-full">
       <div className="p-6 flex-grow">
@@ -54,10 +54,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ name, volume, price, img, onA
         </div>
       </div>
       <button 
-        onClick={onAddToCart}
-        className="w-full bg-slate-100 dark:bg-slate-700 text-brand-blue dark:text-white py-4 font-bold uppercase text-sm hover:bg-brand-blue hover:text-white transition-colors"
+        type="button"
+        className="w-full bg-slate-100 dark:bg-slate-700 text-brand-blue dark:text-white py-4 font-bold uppercase text-sm hover:bg-brand-blue hover:text-white transition-colors cursor-pointer"
       >
-        Adicionar ao Carrinho
+        Falar com vendedor
       </button>
     </div>
   );
