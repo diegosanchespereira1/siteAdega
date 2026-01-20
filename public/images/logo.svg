@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-label="Galpão Continental">
+  <defs>
+    <style>
+      .bg { fill: #305AA6; }
+      .text-main { fill: #f7f7f7; font-family: 'Montserrat', 'Arial Black', sans-serif; font-weight: 900; }
+      .text-sub { fill: #f7f7f7; font-family: 'Montserrat', 'Arial', sans-serif; font-weight: 600; }
+      .orange { fill: #f37021; }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="520" rx="24" />
+  <text class="text-main" x="600" y="190" font-size="140" text-anchor="middle" letter-spacing="2">GALPÃO</text>
+  <text class="text-main" x="600" y="330" font-size="150" text-anchor="middle" letter-spacing="2">CONTINENTAL</text>
+  <g transform="translate(600 255)">
+    <path class="orange" d="M0-55c-3 0-6 2-6 5l-5 70c0 3 2 5 5 5h12c3 0 5-2 5-5l-5-70c0-3-3-5-6-5h0z"/>
+  </g>
+  <text class="text-sub" x="600" y="430" font-size="54" text-anchor="middle">do galpão pra geladeira do seu bar</text>
+</svg>
+

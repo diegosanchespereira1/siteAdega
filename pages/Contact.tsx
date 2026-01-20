@@ -16,23 +16,23 @@ const Contact: React.FC = () => {
             <div>
               <h2 className="text-3xl font-black text-brand-blue dark:text-white mb-6 uppercase tracking-tight">Canais de Atendimento</h2>
               <div className="grid gap-6">
-                <div className="flex items-center space-x-6 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg border-l-4 border-primary w-full max-w-full">
-                  <div className="bg-primary/10 p-4 rounded-full">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 bg-white dark:bg-slate-800 p-5 sm:p-6 rounded-2xl shadow-lg border-l-4 border-primary w-full max-w-full">
+                  <div className="bg-primary/10 p-4 rounded-full shrink-0">
                     <span className="material-icons text-primary">phone_iphone</span>
                   </div>
-                  <div>
+                  <div className="space-y-1 w-full break-words">
                     <p className="text-xs font-bold text-slate-400 uppercase">Telefone / WhatsApp</p>
-                    <p className="text-xl font-black text-brand-blue dark:text-white">{CONTACT_INFO.PHONE}</p>
+                    <p className="text-lg md:text-xl font-black text-brand-blue dark:text-white leading-tight break-words">{CONTACT_INFO.PHONE}</p>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-6 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg border-l-4 border-primary w-full max-w-full">
-                  <div className="bg-primary/10 p-4 rounded-full">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 bg-white dark:bg-slate-800 p-5 sm:p-6 rounded-2xl shadow-lg border-l-4 border-primary w-full max-w-full">
+                  <div className="bg-primary/10 p-4 rounded-full shrink-0">
                     <span className="material-icons text-primary">email</span>
                   </div>
-                  <div>
+                  <div className="space-y-1 w-full break-words">
                     <p className="text-xs font-bold text-slate-400 uppercase">E-mail Corporativo</p>
-                    <p className="text-xl font-black text-brand-blue dark:text-white break-words">{CONTACT_INFO.EMAIL}</p>
+                    <p className="text-lg md:text-xl font-black text-brand-blue dark:text-white leading-tight break-all">{CONTACT_INFO.EMAIL}</p>
                   </div>
                 </div>
               </div>
