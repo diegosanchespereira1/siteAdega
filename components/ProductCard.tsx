@@ -11,6 +11,8 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ name, volume, price, img, isPromo }) => {
+  const message = `Olá! Quero falar sobre ${name} (${volume}) no valor de R$ ${price}.`;
+  const whatsappLink = `https://wa.me/5511964042721?text=${encodeURIComponent(message)}`;
   return (
     <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all border border-slate-100 dark:border-slate-700 flex flex-col h-full">
       <div className="p-6 flex-grow">
@@ -53,12 +55,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ name, volume, price, img, isP
           </div>
         </div>
       </div>
-      <button 
-        type="button"
-        className="w-full bg-slate-100 dark:bg-slate-700 text-brand-blue dark:text-white py-4 font-bold uppercase text-sm hover:bg-brand-blue hover:text-white transition-colors cursor-pointer"
+      <a
+        href={whatsappLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full bg-slate-100 dark:bg-slate-700 text-brand-blue dark:text-white py-4 font-bold uppercase text-sm hover:bg-brand-blue hover:text-white transition-colors cursor-pointer text-center block"
       >
         Falar com vendedor
-      </button>
+      </a>
     </div>
   );
 };
